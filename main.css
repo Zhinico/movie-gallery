@@ -1,0 +1,77 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	background: rgb(95, 2, 2);
+	color: #1d1d1d;
+}
+
+.contenedor {
+	width: 90%;
+	max-width: 1000px;
+	margin: 40px auto 100px auto;
+
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 40px;
+}
+
+
+.contenedor .pelicula {
+	text-align: center;
+}
+
+
+
+.contenedor .pelicula .titulo {
+	font-size: 16px;
+	font-weight: 600;
+    color: mintcream;
+}
+
+.contenedor .pelicula .poster {
+	width: 100%;
+	margin-bottom: 10px;
+	border-radius: 15px;
+}
+
+.contenedor .pelicula .poster:hover{
+    opacity: 0.8;
+    cursor: pointer;
+    
+}
+
+.paginacion{
+    position: fixed;
+	bottom: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    background: rgba(41, 35, 35, 0.664);
+}
+
+.paginacion button {
+	cursor: pointer;
+	border: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	height: 50px;
+	width: 100px;
+	background: #241744;
+	color: #fff;
+	border-radius: 100px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	transition: .3s ease all;
+}
+
+.paginacion button:hover{
+    background: rgb(47, 80, 14);
+}
